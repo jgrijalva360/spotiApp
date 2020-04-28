@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <input
+        #termino
+        type="text"
+        (keyup)="buscar(termino.value)"
+        class="form-control"
+        name=""
+        id=""
+        placeholder="Buscar Artista..."
+      />
+    </div>
+  </div>
+  <div class="mt-5">
+    <app-tarjetas [items]="artistas"></app-tarjetas>
+  </div>
+</div>
